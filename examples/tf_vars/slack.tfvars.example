@@ -1,0 +1,16 @@
+# Setup a Slack Webhook
+# https://slack.com/intl/en-gb/help/articles/115005265063-Incoming-webhooks-for-Slack
+
+
+# use same value as in backend.tf
+aws_profile = "YOUR_AWS_PROFILE"
+terraform_backend_s3_bucket = "CHANGEME"
+aws_region  = "us-west-2"
+
+
+global_prefix = "CHANGEME"  # prefix used for all ggcanary resources
+
+
+Slack_notifiers = [{
+  webhook = "REDACTED"  # eg: https://hooks.slack.com/services/CHANGE/ME/FOR_REAL
+}]
